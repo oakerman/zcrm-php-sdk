@@ -6,6 +6,7 @@ class Logger
     
     public static function writeToFile($msg)
     {
+        return;
         set_include_path(ZCRMConfigUtil::getConfigValue('applicationLogFilePath'));
         $path = get_include_path();
         if (!ZCRMConfigUtil::getConfigValue('applicationLogFilePath')) {
